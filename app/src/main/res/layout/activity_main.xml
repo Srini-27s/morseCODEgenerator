@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvgfg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="-8dp"
+        android:gravity="center"
+        android:text="Enter the text"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!--edit text to accept the input from the user-->
+
+    <!--edit text to display output to the user.
+      Edit text is used since the user can copy the
+      text easily if he wants to-->
+
+    <EditText
+        android:id="@+id/etinput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvgfg"
+        android:layout_marginTop="24dp"
+        android:alpha="0.8"
+        android:background="#009688"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:hint="enter the text"
+        android:inputType="textNoSuggestions"
+        android:padding="10sp"
+        android:textAllCaps="true" />
+
+    <LinearLayout
+        android:id="@+id/llout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etinput"
+        android:layout_marginTop="58dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnencode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mybutton"
+            android:padding="13dp"
+            android:text="EnCode"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mybutton"
+            android:padding="13dp"
+            android:text="clear"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btndecode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/mybutton"
+            android:padding="13dp"
+            android:text="decode"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etoutput"
+        android:layout_width="359dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/llout"
+        android:layout_marginTop="63dp"
+        android:alpha="0.8"
+        android:background="#009688"
+        android:gravity="start"
+        android:hint="output here"
+        android:padding="10sp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
