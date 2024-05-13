@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-"# project" 
+\
 =======
 # Morse-Code-Generator
 Morse-Code-Generator (MAD project)
